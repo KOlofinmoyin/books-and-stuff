@@ -37,8 +37,8 @@ class Media{
 
 // --------- Start of BOOK class (subclass)---------
 class Book extends Media{
-  constructor(author, title, pages, ratings){
-    super(title, ratings);
+  constructor(author, title, pages){
+    super(title);
     this._author = author;
     this._pages = pages;
   }
@@ -55,8 +55,8 @@ class Book extends Media{
 
 // --------- Start of MOVIE class (subclass) ---------
 class Movie extends Media{
-  constructor(director, title, runTime, ratings){
-    super(title, ratings);
+  constructor(director, title, runTime){
+    super(title);
     this._director = director;
     this._runTime = runTime;
   }
@@ -64,7 +64,7 @@ class Movie extends Media{
   get director(){
   return this._director;
   }
-  
+
   get runTime(){
     return this._runTime;
   }
@@ -72,5 +72,22 @@ class Movie extends Media{
 
 // --------- Start of CD class (subclass) ---------
 class CD extends Media{
+  constructor(artist, title, songs){
+    super(title);
+    this._artist = artist;
+    this._title = title;
+    this._songs = songs;
+  }
 
+  get artist(){
+    return this._artist;
+  }
+
+  get title(){
+    return this._title;
+  }
+
+  get songs(){
+    return this._songs;
+  }
 }
