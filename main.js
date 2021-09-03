@@ -1,4 +1,3 @@
-
 class Media{
   constructor(title){
     this._title = title;
@@ -18,12 +17,12 @@ class Media{
     return this._ratings;
   }
 
-  getAverageRating(ratingsArray){
-      const averageRating = 0;
-      for (var i = 0; i < ratingsArray.length; i++) {
-        averageRating += array[i]
+  getAverageRating(ratings){
+      let averageRating = 0;
+      for (var i = 0; i < ratings.length; i++) {
+        averageRating += ratings[i]
       }
-        return averageRating / ratingsArray.length;
+        return Math.floor(averageRating / ratings.length);
   }
 
   toggleCheckOutStatus(){
