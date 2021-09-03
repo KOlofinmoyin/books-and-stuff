@@ -1,4 +1,5 @@
 # Books-and-stuff
+![books-and-stuff](https://user-images.githubusercontent.com/33905131/132049058-f5ae7ad6-8190-4e32-9d85-ac23be1f264f.gif)
 
 ### Objective
 - Build a Library
