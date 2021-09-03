@@ -55,7 +55,19 @@ class Book extends Media{
 
 // --------- Start of MOVIE class (subclass) ---------
 class Movie extends Media{
+  constructor(director, title, runTime, ratings){
+    super(title, ratings);
+    this._director = director;
+    this._runTime = runTime;
+  }
 
+  get director(){
+  return this._director;
+  }
+  
+  get runTime(){
+    return this._runTime;
+  }
 }
 
 // --------- Start of CD class (subclass) ---------
