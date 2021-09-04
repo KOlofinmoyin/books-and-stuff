@@ -13,6 +13,10 @@ class Media{
   return this._isCheckedOut;
   }
 
+  set isCheckedOut(newCheckOutStatus) {
+    this._isCheckedOut = newCheckOutStatus;
+  }
+
   get ratings(){
     return this._ratings;
   }
@@ -26,7 +30,7 @@ class Media{
   }
 
   toggleCheckOutStatus(){
-    this._isCheckedOut == false ? this._isCheckedOut = true : this._isCheckedOut = false;
+    this.isCheckedOut = !this.isCheckedOut;
   }
 
   addRating(newRating){
